@@ -1,0 +1,22 @@
+{
+  "name": "elm-test",
+  "version": "1.0.0",
+  "description": "my fist elm app",
+  "scripts": {
+    "test": "mocha ./tests/**/*Test.js",
+    "test2": "elm-test",
+    "server": "node backend/server.js",
+    "build": "elm-make ./Main.elm --output=./index.html",
+    "start": "npm-run-all build server",
+    "dev": "npm-run-all --parallel watch server"
+  },
+  "author": "Artur Domurad",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "elm": "^0.18.0",
+    "elm-live": "^2.7.4",
+    "npm-run-all": "^4.0.2"
+  }
+}
